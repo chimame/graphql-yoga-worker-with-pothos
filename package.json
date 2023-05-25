@@ -10,5 +10,10 @@
     "@cloudflare/workers-types": "^4.20230419.0",
     "typescript": "^5.0.4",
     "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "@pothos/core": "^3.30.0",
+    "graphql": "^16.6.0",
+    "graphql-yoga": "^3.9.1"
   }
 }
