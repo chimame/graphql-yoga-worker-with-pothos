@@ -33,6 +33,6 @@ const yoga = createYoga({ schema })
 
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-    return yoga(request, ctx)
+    return yoga(request, env, ctx)
   },
 }
