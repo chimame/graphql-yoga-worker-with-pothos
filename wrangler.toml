@@ -2,6 +2,8 @@ name = "graphql-yoga-worker-with-pothos"
 main = "src/worker.ts"
 compatibility_date = "2023-05-25"
 
+node_compat = true
+
 # # KV Namespace binding - For more information: https://developers.cloudflare.com/workers/runtime-apis/kv
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
