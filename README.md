@@ -14,10 +14,12 @@ A program to set up a GraphQL server on Cloudflare Workers.
 
 ```sh
 $ docker compose up
-$ npm install
-$ npm run migrate:dev
-$ npm run start
 #=> http://localhost:8787/graphql
+
+# If you want it to work in your local environment
+# npm install
+# npm run prisma migrate deploy
+# npm run start
 ```
 
 ## License

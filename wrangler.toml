@@ -4,6 +4,9 @@ compatibility_date = "2023-05-25"
 
 node_compat = true
 
+[vars]
+DATABASE_URL='postgres://postgres:password@db:5432/postgres'
+
 # # KV Namespace binding - For more information: https://developers.cloudflare.com/workers/runtime-apis/kv
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"

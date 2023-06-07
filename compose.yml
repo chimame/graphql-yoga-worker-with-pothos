@@ -1,7 +1,19 @@
 services:
+  app:
+    build:
+      context: .
+      target: base
+    entrypoint: ./scripts/docker-entrypoint.sh
+    command: npm run start
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    ports:
+      - 8787:8787
+    environment:
+      - DATABASE_URL=postgres://postgres:password@db:5432/postgres
   db:
     image: postgres:15.1-alpine3.17
-    ports:
-      - 5432:5432
     environment:
       - POSTGRES_PASSWORD=password
